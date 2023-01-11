@@ -6,20 +6,18 @@ let firstNum = 7;
 let secNum = 2;
 
 
-const numberExponentiate = (x, n) => {
+const calcExponentiate = (x, n) => {
     
     if((Number.isInteger(x)===true)&&(Number.isInteger(n)===true)&&(x!=0)&&(n!=0)) {
-        return myltiplResult = x**n;
+        return x**n;
     }
 
     else {
-        return myltiplResult = "Исходные данные не соответствуют задаче";
+        return "Исходные данные не соответствуют задаче";
     }
     
 }
-
-numberExponentiate(firstNum, secNum);
-console.log(myltiplResult);
+console.log(calcExponentiate(firstNum, secNum));
 
 
 
@@ -29,9 +27,10 @@ let testArrayFirstNum = [1, 2, 3, "123", 0, , 3.2, 5];
 let testArraySecNum = [1, 2, 3, "123", 0, , 3.2];
 
 for (let i=0; i<testArrayFirstNum.length; i++ ) {
-
-    numberExponentiate(testArrayFirstNum[i], testArraySecNum[i]);
-    console.log(`РЕЗУЛЬТАТ: ${testArrayFirstNum[i]} в степени ${testArraySecNum[i]} равно -  ${myltiplResult}`);
-
-}   
+    for (let j=0; j<testArraySecNum.length; j++ ) {
+    let exponentiateResult = calcExponentiate(testArrayFirstNum[i], testArraySecNum[j]);
+    console.log(`РЕЗУЛЬТАТ: ${testArrayFirstNum[i]} в степени ${testArraySecNum[j]} равно -  ${exponentiateResult}`);
+    }
+}
+   
 

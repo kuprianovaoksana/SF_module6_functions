@@ -18,7 +18,7 @@ function elementCounter()
             oddNumber += 1;
         }
     });
-    console.log(`Количество четных элементов - ${evenNumber}, Количество нечетных элементов - ${oddNumber}, Количество нулевых элементов - ${nullElement}`);
 }
 
 elementCounter();
+console.log(`Количество четных элементов - ${evenNumber}, Количество нечетных элементов - ${oddNumber}, Количество нулевых элементов - ${nullElement}`);
