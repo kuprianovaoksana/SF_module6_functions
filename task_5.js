@@ -28,8 +28,7 @@ let testArraySecNum = [1, 2, 3, "123", 0, , 3.2];
 
 for (let i=0; i<testArrayFirstNum.length; i++ ) {
     for (let j=0; j<testArraySecNum.length; j++ ) {
-    let exponentiateResult = calcExponentiate(testArrayFirstNum[i], testArraySecNum[j]);
-    console.log(`РЕЗУЛЬТАТ: ${testArrayFirstNum[i]} в степени ${testArraySecNum[j]} равно -  ${exponentiateResult}`);
+    console.log(`РЕЗУЛЬТАТ: ${testArrayFirstNum[i]} в степени ${testArraySecNum[j]} равно -  ${calcExponentiate(testArrayFirstNum[i], testArraySecNum[j])}`);
     }
 }
    
